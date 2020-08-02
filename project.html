@@ -1,0 +1,33 @@
+<head>
+    <title>Quote Generator</title>
+</head>
+
+
+ 
+<body>
+        
+    <h1>
+       Random Quote Generator
+    </h1>
+    <div id="quoteDisplay">
+
+    </div>
+    <button onclick="newQuote()">New Quote</button>
+   <script> var quotes=['A room without books is like a body without a soul. ― Marcus Tullius Cicero',
+'So many books so little time. ― Frank Zappa',
+'You only live once but if you do it right once is enough.― Mae West',
+'Be the change that you wish to see in the world.― Mahatma Gandhi',
+'In three words I can sum up everything I have learned about life it goes on.― Robert Frost',
+'No one can make you feel inferior without your consent.― Eleanor Roosevelt',
+'If you tell the truth, you dont have to remember anything. ― Mark Twain',
+'A friend is someone who knows all about you and still loves you.- Elbert Hubbard',
+'Always forgive your enemies; nothing annoys them so much.― Oscar Wilde',
+'Without music, life would be a mistake.― Friedrich Nietzsche' ]
+
+function newQuote(){
+    var randomnumber=Math.floor(Math.random()*(quotes.length));
+    document.getElementById('quoteDisplay').innerHTML=quotes[randomnumber];
+}
+</script>
+    
+</body>
